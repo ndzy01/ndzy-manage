@@ -1,4 +1,4 @@
-import { Tabs } from 'antd';
+import { Space, Tabs, Tag } from 'antd';
 import type { TabsProps } from 'antd';
 import Login from './Login';
 import Register from './Register';
@@ -21,18 +21,24 @@ const items: TabsProps['items'] = [
   },
 ];
 
+function getRandomColor() {
+  const red = Math.floor(Math.random() * 256); // 生成0-255的随机红色分量
+  const green = Math.floor(Math.random() * 256); // 生成0-255的随机绿色分量
+  const blue = Math.floor(Math.random() * 256); // 生成0-255的随机蓝色分量
+
+  return 'rgb(' + red + ', ' + green + ', ' + blue + ')'; // 返回rgb格式颜色
+}
+
 function App() {
   return (
     <div style={{ padding: 16 }}>
-      <ul>
+      <Space wrap>
         {links.map((item) => (
-          <li key={item.src}>
-            <a target="_blank" href={item.src}>
-              {item.name}
-            </a>
-          </li>
+          <a key={item.src} target="_blank" href={item.src}>
+            <Tag color={getRandomColor()}> {item.name}</Tag>
+          </a>
         ))}
-      </ul>
+      </Space>
       <Tabs defaultActiveKey="1" items={items} />
     </div>
   );

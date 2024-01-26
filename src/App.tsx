@@ -33,7 +33,7 @@ function App() {
           </li>
         ))}
       </ul>
-      <Tabs defaultActiveKey="1" items={items} />;
+      <Tabs defaultActiveKey="1" items={items} />
     </div>
   );
 }

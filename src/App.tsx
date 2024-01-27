@@ -4,7 +4,10 @@ import Login from './Login';
 import Register from './Register';
 
 const links = [
-  { src: 'https://ndzy01.gitee.io/ndzy-admin', name: 'admin' },
+  { src: 'https://ndzy01.gitee.io/ndzy-manage/', name: 'manage' },
+  { src: 'https://ndzy01.gitee.io/ndzy-users/', name: 'users' },
+  { src: 'https://ndzy01.gitee.io/ndzy-tags/', name: 'tags' },
+  { src: 'https://ndzy01.gitee.io/ndzy-records/', name: 'records' },
   { src: 'https://ndzy01.gitee.io/ndzy-todos/', name: 'todos' },
 ];
 

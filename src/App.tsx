@@ -9,7 +9,7 @@ const links = [
   { src: 'https://ndzy01.gitee.io/ndzy-tags/', name: 'tags' },
   { src: 'https://ndzy01.gitee.io/ndzy-records/', name: 'records' },
   { src: 'https://ndzy01.gitee.io/ndzy-todos/', name: 'todos' },
-  { src: 'https://ndzy01.gitee.io/ndzy-imgs/', name: 'imgs' },
+  { src: 'https://ndzy01.gitee.io/ndzy-imgs-manage/', name: 'imgs' },
 ];
 
 const items: TabsProps['items'] = [

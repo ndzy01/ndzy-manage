@@ -1,5 +1,3 @@
-import { Space, Tag } from 'antd';
-
 const links = [
   { src: 'https://ndzy01.gitee.io/ndzy-manage/', name: 'manage' },
   { src: 'https://ndzy01.gitee.io/ndzy-users/', name: 'users' },
@@ -10,26 +8,16 @@ const links = [
   { src: 'https://ndzy01.gitee.io/ndzy-chats/', name: 'chats' },
 ];
 
-function getRandomColor() {
-  const red = Math.floor(Math.random() * 256); // 生成0-255的随机红色分量
-  const green = Math.floor(Math.random() * 256); // 生成0-255的随机绿色分量
-  const blue = Math.floor(Math.random() * 256); // 生成0-255的随机蓝色分量
-
-  return 'rgb(' + red + ', ' + green + ', ' + blue + ')'; // 返回rgb格式颜色
-}
-
-function App() {
+const App = () => {
   return (
     <div style={{ padding: 16 }}>
-      <Space wrap>
-        {links.map((item) => (
-          <a key={item.src} target="_blank" href={item.src}>
-            <Tag color={getRandomColor()}> {item.name}</Tag>
-          </a>
-        ))}
-      </Space>
+      {links.map((item) => (
+        <a style={{ margin: 16 }} key={item.src} target="_blank" href={item.src}>
+          <span> {item.name}</span>
+        </a>
+      ))}
     </div>
   );
-}
+};
 
 export default App;

@@ -1,7 +1,4 @@
-import { Space, Tabs, Tag } from 'antd';
-import type { TabsProps } from 'antd';
-import Login from './Login';
-import Register from './Register';
+import { Space, Tag } from 'antd';
 
 const links = [
   { src: 'https://ndzy01.gitee.io/ndzy-manage/', name: 'manage' },
@@ -10,19 +7,6 @@ const links = [
   { src: 'https://ndzy01.gitee.io/ndzy-records/', name: 'records' },
   { src: 'https://ndzy01.gitee.io/ndzy-todos/', name: 'todos' },
   { src: 'https://ndzy01.gitee.io/ndzy-imgs-manage/', name: 'imgs' },
-];
-
-const items: TabsProps['items'] = [
-  {
-    key: '1',
-    label: '登录',
-    children: <Login />,
-  },
-  {
-    key: '2',
-    label: '注册',
-    children: <Register />,
-  },
 ];
 
 function getRandomColor() {
@@ -43,7 +27,6 @@ function App() {
           </a>
         ))}
       </Space>
-      <Tabs defaultActiveKey="1" items={items} />
     </div>
   );
 }

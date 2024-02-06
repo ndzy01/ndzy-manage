@@ -7,6 +7,7 @@ const links = [
   { src: 'https://ndzy01.gitee.io/ndzy-records/', name: 'records' },
   { src: 'https://ndzy01.gitee.io/ndzy-todos/', name: 'todos' },
   { src: 'https://ndzy01.gitee.io/ndzy-imgs-manage/', name: 'imgs' },
+  { src: 'https://ndzy01.gitee.io/ndzy-chats/', name: 'chats' },
 ];
 
 function getRandomColor() {
